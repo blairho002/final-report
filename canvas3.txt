@@ -1,0 +1,9 @@
+# 아래쪽 캔버스 추가 (애니메이션을 위한 캔버스)
+canvas_bottom = Canvas(window, width=600, height=300, bg="lightyellow")
+canvas_bottom.pack()
+
+# 애니메이션 시작
+animate_ball_and_balloons()
+
+# 이벤트 루프 시작
+window.mainloop()
