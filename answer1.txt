@@ -1,0 +1,13 @@
+# 정답 비교
+    if guess > answer:
+        msg = "정답보다 높음!"
+    elif guess < answer:
+        msg = "정답보다 낮음!"
+    else:
+        msg = f"{username}님, 정답입니다!"
+        calculate_score(username)
+        reset_game()
+
+    resultLabel["text"] = msg
+    attemptLabel["text"] = f"시도 횟수: {attempt_count}"
+    guessField.delete(0, END)
