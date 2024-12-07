@@ -1,0 +1,11 @@
+# 숫자 맞추기 함수
+def guessing():
+    global attempt_count
+    guess = int(guessField.get())
+    username = nameField.get()
+
+    if not username.strip():
+        resultLabel["text"] = "도전자 이름을 입력하세요!"
+        return
+
+    attempt_count += 1
