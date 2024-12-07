@@ -1,0 +1,9 @@
+# 게임 초기화 함수
+def reset_game():
+    global answer, attempt_count
+    answer = random.randint(1, 100)
+    attempt_count = 0
+    resultLabel["text"] = ""
+    hintLabel["text"] = ""
+    attemptLabel["text"] = "시도 횟수: 0"
+    guessField.delete(0, END)
